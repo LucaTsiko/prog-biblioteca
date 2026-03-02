@@ -48,7 +48,7 @@ public class Biblioteca {
      * @param libro Libro recibido
      * @return true si se ha añadido y false si no ha podido añadirlo
      */
-    public boolean addLibre(Libro libro){
+    public boolean addLibro(Libro libro){
         boolean libroAnadido = false;
         int posicion;
         posicion = buscarPrimeroHuecoLibre();
@@ -113,7 +113,7 @@ public class Biblioteca {
      * Devuelve un String con el catálodo de libros
      * @return String con el catálogo de libros
      */
-    public String obtainCatalodo(){
+    public String obtainCatalogo(){
         StringBuilder sb = new StringBuilder("Catalogo: { ");
 
         for (int i = 0; i < CANT_LIBROS; i++) {
